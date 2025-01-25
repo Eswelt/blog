@@ -1,0 +1,150 @@
+/* 调整 Logseq 主界面的默认字体大小 */
+body {
+    font-size: 22px; /* 将 16px 替换为你需要的字体大小 */
+}
+
+/* 调整 Logseq 页面内容的字体大小 */
+.ls-block {
+    font-size: 22px; /* 页面内容字体大小 */
+}
+
+.ls-block .code {
+    font-size: 22px; /* 设置代码块字体大小 */
+}
+
+pre {
+    font-size: 22px;
+}
+
+/* 调整标题的字体大小 */
+h1 {
+    font-size: 24px; /* 一级标题字体大小 */
+}
+
+h2 {
+    font-size: 23px; /* 二级标题字体大小 */
+}
+
+h3 {
+    font-size: 22px; /* 三级标题字体大小 */
+}
+/* 修改代码块样式 */
+/* Based on arcticicestudio's Nord theme */
+/* https://github.com/arcticicestudio/nord */
+
+:not(pre)>code {
+  color: white;
+  background-color: rgb(44, 149, 183);
+}
+
+/* 整体代码块样式 */
+.CodeMirror {
+    background-color: #23506a !important; /* 深蓝灰背景 */
+    color: #d8dee9 !important; /* 默认字体颜色 */
+    font-family: Fira Code, Menlo, Monaco, Consolas, "Courier New", monospace !important; /* 字体 */
+    border-radius: 4px !important; /* 圆角边框 */
+    padding: 5px !important; /* 内边距 */
+    font-size: 20px !important; /* 字体大小 */
+    line-height: 1.6 !important; /* 行高 */
+  }
+  
+  /* 激活行的背景颜色 */
+  .CodeMirror-activeline-background {
+    background-color: #315e78 !important; /* 深灰色 */
+  }
+  
+  /* SQL 关键字高亮 (如 SELECT, FROM) */
+  .cm-keyword {
+    color: #87c5dd !important; /* 浅蓝色 */
+    font-weight: bold;
+  }
+  /* 内置函数 (如 COUNT, SUM) */
+  .cm-builtin {
+    color: #81A1C1 !important; /* 浅蓝色 */
+    font-weight: bold; /* 加粗 */
+  }
+
+  /* 标点符号 (如 ,) */
+  .cm-punctuation {
+    color: #d8dee9 !important; /* 默认文本颜色 */
+  }
+  
+  /* 数字 (如 123) */
+  .cm-number {
+    color: #d4a1cb !important; /* 粉色 */
+  }
+  
+  /* 字符串 ('text') */
+  .cm-string {
+    color: #eeb737 !important; /* 明黄色 */
+  }
+  
+  /* 注释 (-- comment) */
+  .cm-comment {
+    color: #7da9b1 !important; /* 灰色 */
+    font-style: italic;
+  }
+  
+  /* 错误或警告信息 (如未闭合的引号) */
+  .cm-error {
+    background-color: #bf616a !important; /* 红色背景 */
+    color: #f8f8f0 !important; /* 白色文字 */
+  }
+
+  /* 函数名 */
+  .cm-def {
+    color: #EBCB8B !important; /* 浅黄色 */
+    font-weight: bold; /* 加粗 */
+  }
+
+  /* 函数名或内置变量 (如 COUNT, SUM) */
+  .cm-variable {
+    color: #98c379 !important; /* 绿色 */
+  }
+  
+  /* 特定上下文中的变量（如属性名） */
+  .cm-variable-2 {
+    color: #f0afaf !important; /* 浅蓝色 */
+  }
+/* NULL 值 */
+  .cm-atom {
+    color: #e79837 !important; /* 浅橙色 */
+    font-weight: bold; /* 加粗 */
+  }
+
+/* 数据类型 */
+  .cm-type {
+    color: #8FBCBB !important; /* 浅青色 */
+    font-style: italic; /* 斜体 */
+  }
+
+  /* 属性名称（如 self.radius 中的 radius） */
+.cm-property {
+    color: #8FBCBB !important; /* 浅青色 */
+    font-style: italic; /* 斜体 */
+  }
+
+  /* 圆括号和其他符号 */
+  .cm-bracket {
+    color: #81A1C1 !important; /* 浅蓝色 */
+  }
+  
+  .cm-operator {
+    color: #81A1C1 !important;
+    font-weight: bold;
+  }
+
+  /* 选中区域背景和文字颜色 */
+  .CodeMirror-selected {
+    background-color: rgba(100, 149, 237, 0.3) !important; /* 浅蓝背景 */
+    color: #ffffff !important; /* 白色文字 */
+  }
+  
+  /* 行号背景和文字颜色 */
+  .CodeMirror-gutters {
+    background-color: #23506a !important; /* 深蓝灰背景 */
+  }
+  
+  .CodeMirror-linenumber {
+    color: #9acfd7 !important; /* 灰色行号 */
+  }
